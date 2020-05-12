@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Cowsays History</title>  
+    </head>
+    <body>
+        <h4><a href="/">Cowsays</a></h4>
+        <h3>10 Most Recent Results</h3>
+        {% for foo in data %}
+            <p>{{ foo.text }}</p>
+        {% endfor %}
+    </body>
+</html>

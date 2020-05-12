@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Cowsays</title>  
+    </head>
+    <body>
+        <h4><a href="/">Cowsays</a> | <a href="/history">History</a></h4>
+        <form action="" method='post'>
+            {% csrf_token %}
+            {{form.as_p}}
+        <input type="submit" value='Submit'>
+        </form>
+        <pre>{{ display_text }}</pre>
+    </body>
+</html>
+  
